@@ -16,7 +16,7 @@ def generate_qr_code():
     save_path = filedialog.askdirectory()
     if not save_path:
         return
-
+    
     save_full_path = os.path.join(save_path, file_name)
 
     qr_code = qrcode.QRCode(version=4, box_size=80, border=5)
